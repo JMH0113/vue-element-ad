@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-31 17:29:24
- * @LastEditTime: 2021-02-04 20:35:20
+ * @LastEditTime: 2021-02-14 15:23:52
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vueProject\vue-element-ad\src\components\Main.vue
@@ -11,9 +11,6 @@
         <el-header style="padding: 0 ">
             <common-header></common-header>
         </el-header>
-        <!--左侧栏-->
-       
-        <!--右侧栏-->
         <el-container>
 
         <el-aside :span="12" width="300px">

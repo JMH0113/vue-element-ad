@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-19 16:12:13
- * @LastEditTime: 2021-02-06 14:15:40
+ * @LastEditTime: 2021-02-09 09:29:25
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vueProject\vue-element-ad\src\views\Home.vue
@@ -49,8 +49,8 @@ section {
 <script>
 const Mock = require('mockjs');
 // @ is an alias to /src
-import blockInfo from "@/components/blockInfo.vue";
-import {getDateRange} from "@/components/getData.js";
+import blockInfo from "@/components/BlockInfo.vue";
+import {getDateRange} from "@/components/GetData.js";
 export default {
   name: "Home",
   components: {

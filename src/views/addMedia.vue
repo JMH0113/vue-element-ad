@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-19 16:12:13
- * @LastEditTime: 2021-02-07 14:46:48
+ * @LastEditTime: 2021-02-08 16:11:26
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vueProject\vue-element-ad\src\views\About.vue
@@ -188,10 +188,14 @@ export default {
     }
   },
   created() {
-    console.log(alert);
-    alert.showDialog(111,2222,3333,4444)
   },
   methods: {
+    confirmFn(){
+      this.$router.push('Dock');
+    },
+    cancelFn(){
+      console.log("接到取消回调");
+    },
     fileChange(file) {
       this.form.imageUrl = URL.createObjectURL(file.raw);//用户选择图片后添加到form对象中
       this.imgShow = true;//展示img标签
@@ -199,7 +203,7 @@ export default {
     submitForm(formName) { //提交表单
       this.$refs[formName].validate((valid) => {
         if (valid) {
-          alert("submit!");
+              alert('提示','您已提交成功，是否前往技术对接文档？','取消','确定',this.cancelFn,this.confirmFn)
         } else {
           console.log("error submit!!");
           return false;

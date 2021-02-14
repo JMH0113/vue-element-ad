@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-02-04 11:04:52
- * @LastEditTime: 2021-02-05 09:43:26
+ * @LastEditTime: 2021-02-09 09:25:15
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vueProject\vue-element-ad\src\components\blockInfo.vue
@@ -71,6 +71,8 @@ export default {
             ]
         }
     },
-    props:['msg']
+    props:{
+        msg: Array
+    }
 }
 </script>
